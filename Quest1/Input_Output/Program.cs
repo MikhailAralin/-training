@@ -9,12 +9,13 @@
 
             Console.WriteLine("Введите фамилию:");
             var surname = Console.ReadLine();
- 
+
+            Console.WriteLine("Введите возраст");
             var vr = string.Empty;
             bool ok;
             do
             {
-                Console.WriteLine("Введите возраст");
+                
                 vr = Console.ReadLine();
 
                 ok = int.TryParse(vr, out int age) && age >= 0 && age <= 150;
