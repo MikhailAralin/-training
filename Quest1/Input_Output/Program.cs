@@ -4,11 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Вводите имя:");
-            var name = Console.ReadLine();
+            var name = Check.Checking("имя");
 
-            Console.WriteLine("Введите фамилию:");
-            var surname = Console.ReadLine();
+            var surname = Check.Checking("фамилия");
 
             Console.WriteLine("Введите возраст");
             var vr = string.Empty;
