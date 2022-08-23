@@ -1,10 +1,7 @@
-﻿
-
-namespace Lesson3.CoffeeMachine
+﻿namespace Lesson3.CoffeeMachine
 {
     class Program
     {
-
     }
 }
 
