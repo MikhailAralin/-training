@@ -22,13 +22,14 @@ namespace Builder
         public string ApartmentNumber { get; set; }
 
         public override string ToString() =>
-            new StringBuilder()
-            .Append(Index)
-            .Append(Country)
-            .Append(City)
-            .Append(Street)
-            .Append(House)
-            .Append(ApartmentNumber)
-            .ToString();
+            //new StringBuilder()
+            //.Append(Index)
+            //.Append(Country)
+            //.Append(City)
+            //.Append(Street)
+            //.Append(House)
+            //.Append(ApartmentNumber)
+            //.ToString();
+            $"Индекс: {Index}, страна: {Country}, город: {City}, {Street}, номер дома: {House}, номер квартиры: {ApartmentNumber}";
     }
 }
