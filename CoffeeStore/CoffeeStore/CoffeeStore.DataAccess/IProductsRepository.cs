@@ -1,9 +1,13 @@
-﻿using CoffeeStore.DataAccess.Models;
+﻿using CoffeeStore.DataAccess.Dto;
 
 namespace CoffeeStore.DataAccess
 {
-    internal interface IProductsRepository
+    public interface IProductsRepository
     {
-        Task<IEnumerable<Product>> GetAllProducts();
+        Task<Product[]> GetAllProducts();
+
+        Task<Product[]> GetProductsByPartialName(string partialName);
+
+        Task<Product[]> GetProductsByType(Guid productTypeId);
     }
 }

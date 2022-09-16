@@ -1,7 +1,7 @@
-﻿using CoffeeStore.DataAccess.Context;
-using CoffeeStore.DataAccess.Models;
+﻿using CoffeeStore.DataAccess.Dto;
+using CoffeeStore.DataAccess;
 
-// await DealWithDbContext();
+await DealWithDbContext();
 
 async Task DealWithDbContext()
 {
@@ -35,7 +35,7 @@ async Task DealWithDbContext()
         Console.WriteLine($"ID:{orderRow.OrderId}, Amount: {orderRow.Amount}, Sum: {orderRow.Sum}");
     }
 
-    // Add new product
+    //Add new product
     var productType = dbContext.ProductTypes.FirstOrDefault(type => type.Name == "Coffee (ground)")
         ?? throw new InvalidOperationException("Type 'Cofee (ground)' should be placed in ProdyctTypes!");
 
